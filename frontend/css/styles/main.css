@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  margin: 0;
+}
+
+p {
+  color: blueviolet;
+}
+
+#my-span {
+  color: greenyellow;
+}
+
+span.test {
+  color: inherit;
+}
+
+.highlight {
+  background-color: yellow;
+  color: inherit;
+}
+
+p span.cursive {
+  color: red;
+}
+
+p .cursive {
+  font-style: italic;
+  color: blue;
+}
+
+.highlight.cursive {
+  font-weight: bold;
+}
+
+span {
+  color: red;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* 
+Specificity
+*                              - 0
+E, ::pseudo-element            - 1
+.class, :pseudo-class, [attr]  - 10
+#id                            - 100
+(inline styles)                - 1000
+*/
+
+/*
+[attr] -> element has that attribute
+[attr=val] -> element has that attribute and the value is exacly val
+[attr^=val] -> value begins with val
+[attr$=val] -> value ends with val
+[attr~=val] -> value contains inside separated by spaces val
+[attr*=val] -> value contains inside of it anywhere val
+*/
+
+/* 
+(inline styles) |     #id     |    .class    |      E       |
+       0               0              1             2
+
+*/
+
+li:first-child {
+  color: green;
+}
+
+li:hover {
+  color: red;
+}
+
+p::first-letter {
+  font-size: 3em;
+  float: left;
+}
+
+[href^='http']::before {
+  /* background-image: url(../images/external-link.png);
+  background-repeat: no-repeat; */
+  background: no-repeat url(../images/external-link.png);
+  background-size: contain;
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+/*
+Selector Combinators
+(nothing)   -> all selectors apply to the same element
+" " (space) -> (generic descendant combinator) the selector to the right is inside the selector to the left (in HTML)
+>           -> (child/direct descendant combinator) the element to the right is directly inside the one to the left
++           -> (immediately preceding sibling)
+~           -> (preceding sibling)
+*/
+
+li > a {
+  color: red;
+}
+
+ul + p {
+  font-size: 2em;
+}
+
+p:has(+ ul) {
+  background: green;
+}

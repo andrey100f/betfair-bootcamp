@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Bootcamp</title>
+  </head>
+  <body>
+    <nav>
+      <menu>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#nemo">About us</a></li>
+        <li><a href="mailto:paul.negoescu@scoalainformala.ro">Contact</a></li>
+      </menu>
+    </nav>
+    <!-- 
+      http://www.scoalainformala.ro:5500/images/nemonew.webp?id=1&title=Nemo&asc#ceva
+      - protocol / schema
+      - ip / domain: <subdomain>.<domain>.<TLD top level domain>
+      - port: 80(http), https(443)
+      - path
+      - search / query params
+      - fragment
+     -->
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <main>
+      <aside></aside>
+      <article>
+        <header></header>
+        <p>
+          Lorem ipsum, dolor
+          <strong>sit amet consectetur adipisicing</strong> elit. Assumenda
+          esse, natus sunt totam <em>veniam facilis labore quis</em>.
+          Perferendis, <span>fugit exercitationem</span>, odio iste laborum
+          error animi, accusamus perspiciatis eos doloribus quod!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam quia
+          rem ipsum dicta, quos fugit placeat magnam laboriosam perferendis quam
+          eligendi excepturi iste ipsam tempora quas architecto neque! Omnis,
+          nihil.
+        </p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <br />
+
+        Nemo asperiores aspernatur ipsum illum, id voluptate? Doloribus nulla
+        laudantium quo quaerat, ut provident voluptatibus temporibus neque
+        dolore? Unde enim illo impedit!
+        <img
+          id="nemo"
+          src="images/nemonew.webp"
+          alt="A cute little fish"
+          width="100"
+        />
+        <section>
+          Ipsam qui doloremque odio quae nostrum assumenda magni distinctio sit
+          amet laudantium aspernatur, iusto repellendus quisquam totam quibusdam
+          unde? Facilis fuga numquam quam accusamus quisquam natus magni
+          obcaecati recusandae! Aspernatur! Porro culpa, soluta eum blanditiis,
+          in illum officia necessitatibus nam amet voluptate corrupti dolore et
+          minus adipisci. Sit a, quaerat consequatur earum recusandae adipisci
+          illo quibusdam eaque enim odit rem.
+        </section>
+        <div>
+          Labore, autem dolorum. Nisi sed architecto necessitatibus aspernatur
+          voluptate commodi non distinctio. Porro, similique cumque odit neque
+          atque molestiae a. Ipsa dicta sit, consequatur laborum officia dolorem
+          doloribus consequuntur atque! Aliquam accusamus accusantium sequi
+          commodi amet necessitatibus labore quia, incidunt, aspernatur, fugit
+          in reiciendis fuga!
+          <iframe src="images/index.html" frameborder="0"></iframe>Earum a saepe
+          ratione modi quos excepturi pariatur alias? Doloribus libero dicta
+          nesciunt natus cumque?
+        </div>
+        <footer></footer>
+      </article>
+
+      <table border="1" cellpadding="5">
+        <thead>
+          <tr>
+            <th colspan="3"></th>
+            <th colspan="2" scope="colgroup">Contact Info</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th scope="col">#</th>
+            <th scope="col">Nume</th>
+            <th scope="col">Nr. Telefon</th>
+            <th scope="col">Adresa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="rowgroup" rowspan="2">Admins</th>
+            <td>1</td>
+            <td>Paul Negoescu</td>
+            <td>01234567</td>
+            <td>Whatever street nr. 15</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Andreea Popescu</td>
+            <td>01234567</td>
+            <td>Another street nr. 15</td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+      <form action="images/index.html">
+        <label for="fName">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          id="fName"
+          placeholder="First Name"
+          value="Default value"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <input type="checkbox" name="color" value="Red" />
+        <input type="checkbox" name="color" value="Green" checked />
+        <input type="checkbox" name="color" value="Blue" />
+        <input type="radio" name="gender" value="Male" />
+        <input type="radio" name="gender" value="Female" checked />
+        <input type="radio" name="gender" value="Other" />
+
+        <select>
+          <optgroup label="Genders">
+            <option value="Male">Male</option>
+            <option value="Female" selected>Female</option>
+            <option value="Other">Other</option>
+          </optgroup>
+        </select>
+
+        <textarea name="sadsa" id="" cols="30" rows="10">
+          o trecem aici
+          cxvsdfsd
+        </textarea>
+
+        <button type="submit">Trimite</button>
+      </form>
+    </main>
+  </body>
+</html>

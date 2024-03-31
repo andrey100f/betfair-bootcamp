@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="styles/dom.css" />
+
+    <script src="scripts/ajax.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h1>Weather</h1>
+      <form data-weather-form>
+        <p>
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" list="city-source" />
+          <datalist id="city-source">
+            <option value="Berlin">Berlin</option>
+            <option value="Brasov">Brasov</option>
+            <option value="Bucharest">Bucharest</option>
+            <option value="Boulder,Colorado">Boulder</option>
+          </datalist>
+        </p>
+        <p>
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <optgroup label="Please select a country">
+              <option value="RO">Romania</option>
+              <option value="DE">Germany</option>
+              <option value="US">USA</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          <button type="submit">Search</button>
+        </p>
+      </form>
+      <img src="assets/spinner.svg" class="loader hidden" alt="Loding ..." data-loading>
+      <div class="hidden" data-weather-container>
+        <p>
+          The weather in <span data-weather-city></span> is
+          <span data-weather-desc></span>
+        </p>
+        <img src="" alt="Current weather icon" data-weather-icon />
+        <strong data-weather="temp">Current temp</strong>
+        <p>
+          Min: <span data-weather="temp_min">Min temp</span> Max:
+          <span data-weather="temp_max">Max temp</span>
+        </p>
+      </section>
+    </div>
+    <!-- <section>
+      <h1>Counter</h1>
+      <output data-counter-output>0</output>
+      <p>
+        <input type="number" name="step" data-counter-step-input />
+      </p>
+      <p>
+        <button data-counter-button="decrement" data-counter-step="5">
+          -5
+        </button>
+        <button data-counter-button="decrement">-</button>
+        <button data-counter-button="reset">Reset</button>
+        <button data-counter-button="increment">+</button>
+        <button data-counter-button="increment" data-counter-step="5">
+          +5
+        </button>
+      </p>
+    </section>
+    <section>
+      <h1>Todos</h1>
+      <ul data-todos-list></ul>
+    </section> -->
+  </body>
+</html>
